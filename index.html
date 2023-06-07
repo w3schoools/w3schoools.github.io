@@ -2086,6 +2086,7 @@ function sortTablee() {
 <button style="color:#F8F8F8" onclick="myFunction3()">3</button>
 <button style="color:#F8F8F8" onclick="myFunction4()">4</button>
 <button style="color:#F8F8F8" onclick="myFunction5()">5</button>
+<button style="color:#F8F8F8" onclick="myFunction5()">6</button>
 <button style="color:#F8F8F8" onclick="myFunction8()">8</button>
 <button style="color:#F8F8F8" onclick="myFunction9()">9</button>
 <button style="color:#F8F8F8" onclick="myFunction10()">10</button>
@@ -2115,6 +2116,11 @@ function myFunction4() {
 }
 function myFunction5() {
   var copyText = document.getElementById("5");
+  copyText.select();
+  navigator.clipboard.writeText(copyText.value);
+}
+function myFunction6() {
+  var copyText = document.getElementById("6");
   copyText.select();
   navigator.clipboard.writeText(copyText.value);
 }
